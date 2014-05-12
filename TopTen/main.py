@@ -33,7 +33,7 @@ if __name__ == "__main__":
     
 #     Create a map of results collected from all the servers
     for resultId in range(1, serverid + 1):
-        filename = sys.argv[1] + '/result' + str(resultId)
+        filename = sys.argv[1] + '/result_' + str(resultId)
         for line in open(filename, 'r'):
             line = line.strip() 
             ip, counts, hits = line.split()
